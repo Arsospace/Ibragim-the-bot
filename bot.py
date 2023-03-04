@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix='>', intents=intents)
 
 async def on_message(ctx):
 	msg = ctx.content
-	if "придумай шутку" in msg.lower():
+	if "ibragim" in msg.lower():
 		joke = pyjokes.get_joke(language="en", category="all")
 		await ctx.reply(joke)
 
